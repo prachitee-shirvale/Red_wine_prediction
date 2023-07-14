@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Wine Quality Prediction</title>
+</head>
+<style>
+    label,h4,title{
+        color: aliceblue;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+</style>
+<body style="background-color: rgb(162, 1, 1);">
+    <h1> Red Wine Quality Prediction </h1>
+
+            <form method="POST" action="/predict_quality">
+    
+                <label>Fixed_acidity:</label>
+                <input type = "text" name = "fixed_acidity">
+        
+                <br>
+                <br>
+                
+                <label>Volatile_acidity:</label>
+                <input type = "text" name = "volatile_acidity">
+        
+                <br>
+                <br>
+        
+                <label>Citric_acid:</label>
+                <input type = "text" name = "citric_acid">
+                </select>
+        
+                <br>
+                <br>
+        
+                <label>Residual_sugar:</label>
+                <input type = "text" name = "residual_sugar">
+                </select>
+        
+                <br>
+                <br>
+        
+                <label>Chlorides:</label>
+                <input type = "text" name = "chlorides">
+        
+                <br>
+                <br>
+        
+                <label>Free_sulfur_dioxide:</label>
+                <input type = "text" name = "free_sulfur_dioxide">
+        
+                <br>
+                <br>
+        
+                <label>Total_sulfur_dioxide:</label>
+                <input type = "text" name = "total_sulfur_dioxide">
+        
+                <br>
+                <br>
+        
+                <label>pH:</label>
+                <input type = "text" name = "pH">
+        
+                <br>
+                <br>
+                
+                <label>Sulphates:</label>
+                <input type = "text" name = "sulphates">
+        
+                <br>
+                <br>
+                
+                <label>Alcohol:</label>
+                <input type = "text" name = "alcohol">
+        
+                <br>
+                <br>
+                <input type = "submit" value="SUBMIT">
+        
+                <br>
+        
+                <h4><strong>Quality of wine will be <b> {{ prediction }} </b> out of 10.</strong></h4>
+        
+        
+            </form>
+    
+</body>
+</html>
+
